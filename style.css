@@ -1,0 +1,56 @@
+* {
+    position: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('./assets/bgcalculadora.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+    margin-top: 7%;
+}
+
+
+section {
+    margin-top:5%;
+}
+
+main {
+    background-color: black;
+    border:2px solid black;
+    border-radius: 12px;
+    padding: 15px;
+    width: 12em;
+    height: 10em;
+}
+
+.tela {
+    color: black;
+    margin-top:3%;
+    height:30px;
+    font-size:24px;
+    letter-spacing:2px;
+    background-color:#ccc;
+    margin:10px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+.teclado {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    gap:5px;
+    font-size:35px;
+    margin: 0 5%;
+}
