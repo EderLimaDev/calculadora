@@ -12,41 +12,41 @@
         <main>
             <!--max character 12-->
             <div class="tela">
-                <span class="visor-calculo-completo">meu visor completo</span>
-                <span class="visor-parcial">visor do calculo</span>
+                <span class="visor-calculo-completo"></span>
+                <span class="visor-parcial"></span>
             </div>
 
             <div class="teclado">
                  
                 <!-- First Line -->
-                <button onclick="btnPressed('%')" >%</button>
                 <button onclick="clearTela()">C</button>
+                <button onclick="btnPressed('%')" >%</button>
                 <button onclick="backspace()" >←</button>
-                <button onclick="btnPressed('/')" >÷</button>
+                <button onclick="operator('÷')" >÷</button>
                 
                 <!-- Second Line -->
                 <button onclick="btnPressed(7)" >7</button>
                 <button onclick="btnPressed(8)" >8</button>
                 <button onclick="btnPressed(9)" >9</button>
-                <button onclick="btnPressed('*')" >x</button>
+                <button onclick="operator('x')" >x</button>
                 
                 <!-- third Line -->
                 <button onclick="btnPressed(4)" >4</button>
                 <button onclick="btnPressed(5)" >5</button>
                 <button onclick="btnPressed(6)" >6</button>
-                <button onclick="btnPressed('-')" >-</button>
+                <button onclick="operator('-')" >-</button>
                 
                 <!-- fourth Line -->
                 <button onclick="btnPressed(1)" >1</button>
                 <button onclick="btnPressed(2)" >2</button>
                 <button onclick="btnPressed(3)" >3</button>
-                <button onclick="btnPressed('+')" >+</button>
+                <button onclick="operator('+')" >+</button>
                 
                 <!-- fifth Line -->
                 <button onclick="btnPressed('00')">00</button>
                 <button onclick="btnPressed(0)" >0</button>            
                 <button onclick="btnPressed('.')" >.</button>            
-                <button onclick="calculo()" >=</button>
+                <button onclick="calculate(x, newOperator, y)">=</button>
             
             </div>
             
