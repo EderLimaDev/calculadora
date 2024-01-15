@@ -6,51 +6,75 @@
 }
 
 body {
-    background-image: url('./assets/bgcalculadora.jpg');
-    background-size: cover;
+    background: #174a81;
+    background: linear-gradient(332deg, rgba(23,74,129,1) 43%, rgba(28,83,203,1) 64%);
     height: 100vh;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
     color: white;
-    margin-top: 7%;
 }
 
-
-section {
-    margin-top:5%;
-}
 
 main {
-    background-color: black;
-    border:2px solid black;
-    border-radius: 12px;
-    padding: 15px;
-    width: 12em;
-    height: 10em;
+    background-color: #1E364F;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
 }
 
 .tela {
     color: black;
-    margin-top:3%;
-    height:30px;
     font-size:24px;
+    font-weight: bold;
     letter-spacing:2px;
-    background-color:#ccc;
-    margin:10px;
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-end;
+    background-color:#fff;
+    margin: 5%;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0;
+
+ 
 }
+
+.visor-calculo-completo {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 30px;
+    font-size:16px;
+    border: 1px solid red;
+}
+
+.visor-parcial {
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    font-size:24px;
+    border: 1px solid red;
+}
+
 
 .teclado {
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows:repeat(5, 1fr);
+    width: 15rem;
     gap:5px;
-    font-size:35px;
-    margin: 0 5%;
+    margin: 5%; 
+}
+
+button {
+    padding: 15px;
+    border: none;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #ccc;
+    
 }

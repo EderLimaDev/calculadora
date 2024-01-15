@@ -20,9 +20,7 @@ function btnPressed(num) {
 
 function calculo() {
     var resultado = document.querySelector(".tela").innerHTML;
-    if(resultado) {
-        document.querySelector(".tela").innerHTML = eval(resultado);
-    }
+
     
 }
 
