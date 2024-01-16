@@ -51,9 +51,10 @@ main {
 .visor-parcial {
     display: block;
     text-align: right;
-    width: 100%;
+    max-width: 100%;
     height: 50px;
     font-size:36px;
+    flex-wrap: wrap;
 }
 
 

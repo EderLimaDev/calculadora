@@ -95,6 +95,20 @@ function operator(selectedOperator) {
             document.querySelector(".visor-calculo-completo").innerHTML = x + selectedOperator
             }
             break;
+            case "%":
+                if(document.querySelector(".visor-parcial").innerHTML === '') {
+                    x = Number(document.querySelector(".visor-calculo-completo").innerHTML)
+                    newOperator = percent
+                    document.querySelector(".visor-calculo-completo").innerHTML = x + selectedOperator
+                } else { 
+                x = Number(document.querySelector(".visor-parcial").innerHTML)
+                newOperator = percent
+                document.querySelector(".visor-parcial").innerHTML = '';
+                document.querySelector(".visor-calculo-completo").innerHTML = x + selectedOperator
+                }
+                break;        
+
+        
 
         default:
             break;
@@ -126,6 +140,9 @@ function division(x, y) {
     return x / y
 }
 
+function percent(x, y) {
+    return y / 100
+}
 
 
 
