@@ -37,6 +37,7 @@ function btnPressed(num) {
    const number2 = document.querySelector(".visor-calculo-completo").innerHTML;
    document.querySelector(".visor-calculo-completo").innerHTML = number2 + num;
 
+
 }
 
 // Função para selecionar operador
@@ -141,7 +142,7 @@ function division(x, y) {
 }
 
 function percent(x, y) {
-    return y / 100
+    return (x * y) / 100
 }
 
 
@@ -149,9 +150,12 @@ function percent(x, y) {
 // Função para limpar
 
 function clearTela() {
-    document.querySelector('.tela').innerHTML = "";
+   
     x = 0;
     y = 0;
     newOperator = '';
+    result = '';
+    document.querySelector('.visor-parcial').innerHTML = "";
+    document.querySelector(".visor-calculo-completo").innerHTML = ''; 
 
 }
